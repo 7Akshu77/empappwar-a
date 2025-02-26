@@ -1,0 +1,8 @@
+package com.empapp.controller;
+@RestController
+public class HelloController {
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hello from Spring Boot!"+LocalDateTime.now().toString();
+    }
+}
